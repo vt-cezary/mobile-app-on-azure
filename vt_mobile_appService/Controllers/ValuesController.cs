@@ -17,7 +17,7 @@ namespace vt_mobile_appService.Controllers
             ITraceWriter traceWriter = this.Configuration.Services.GetTraceWriter();
 
             string host = settings.HostName ?? "localhost";
-            string greeting = "Hello from " + host;
+            string greeting = "Hello1 from " + host;
             
             traceWriter.Info(greeting);
             return greeting;
